@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Year Progress </title>
+    
+    <!--start STYLE PROD imports
+        <link rel="stylesheet" href="style.min.css"></link>
+    end STYLE PROD imports-->
+
+    <!--start STYLE DEV imports-->
+        <link rel="stylesheet" href="style.css"></link>
+    <!--end STYLE DEV imports-->
+</head>
+
+<body>
+    <div class="progress-bar-wrapper">
+        <div class="progress-bar-txt">Year Progress</div>
+        <div class="progress-bar">
+            <div class="progress-bar-fill"></div>
+        </div>
+        <div class="progress-value"></div>
+        <div class="greetings-container">
+            <!-- Good evening, <div class="username">&nbsp;Pawan Singh.</div><input value="Pawan Singh." class="username-input hidden"> -->
+        </div>
+    </div>
+    <div title="Settings" class="settings">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="#fff" d="M24 13.616v-3.232c-1.651-.587-2.694-.752-3.219-2.019v-.001c-.527-1.271.1-2.134.847-3.707l-2.285-2.285c-1.561.742-2.433 1.375-3.707.847h-.001c-1.269-.526-1.435-1.576-2.019-3.219h-3.232c-.582 1.635-.749 2.692-2.019 3.219h-.001c-1.271.528-2.132-.098-3.707-.847l-2.285 2.285c.745 1.568 1.375 2.434.847 3.707-.527 1.271-1.584 1.438-3.219 2.02v3.232c1.632.58 2.692.749 3.219 2.019.53 1.282-.114 2.166-.847 3.707l2.285 2.286c1.562-.743 2.434-1.375 3.707-.847h.001c1.27.526 1.436 1.579 2.019 3.219h3.232c.582-1.636.75-2.69 2.027-3.222h.001c1.262-.524 2.12.101 3.698.851l2.285-2.286c-.744-1.563-1.375-2.433-.848-3.706.527-1.271 1.588-1.44 3.221-2.021zm-12 2.384c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z"/>
+        </svg>
+    </div>
+    <div class="current-time"></div>
+    <div class="copyright">&copy; Pawan Singh</div>
+
+    <div class="settings-modal hidden">
+        <div class="header"> 
+            <div>Settings</div>
+            <div class="close-icon">x</div>
+        </div>
+        <div class="body">
+            <div class="settings-section-header">
+                General Settings
+            </div>
+            <div class="settings-row progress-metrics d-flex">
+                <label>Progress Metric:</label>
+                <div class="option">
+                    <input type="radio" id="year" name="progress-metrics-unit" value="year" checked/>
+                    <label for="year">Year</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="month" name="progress-metrics-unit" value="month"/>
+                    <label for="month">Month</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="week" name="progress-metrics-unit" value="week"/>
+                    <label for="week">Week</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="day" name="progress-metrics-unit" value="day"/>
+                    <label for="day">Day</label>
+                </div>
+            </div>
+
+            <div class="settings-row background-type d-flex">
+                <label>Background:</label>
+                <div class="option">
+                    <input type="radio" id="gradient" name="background-type" value="gradient" checked/>
+                    <label for="gradient">Random Gradient</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="image" name="background-type" value="image"/>
+                    <label for="image">Daily Image</label>
+                </div>
+            </div>
+
+            <div class="settings-row background-type d-flex">
+                <label>Water Reminder:</label>
+                <div class="option">
+                    <label for="gradient">Remind me to Drink Water Every : </label>
+                    <input type="text" id="water-reminder" name="water-reminder" value="30" checked/>
+                    <label> Minutes</label>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script src="tinycolor.js"></script> -->
+    
+    <!--start DEV imports-->
+        <script src="utils.js"></script>
+        <script src="date_time_utils.js"></script>
+        <script src="colors_util.js"></script>
+        <script src="timeprogress.js"></script>
+    <!--end DEV imports-->
+
+    <!--start PROD imports
+        <script src="script.min.js"></script>
+    end PROD imports-->
+
+</body>
+
+</html>

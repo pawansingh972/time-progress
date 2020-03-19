@@ -1,0 +1,15 @@
+{
+    "name": "Time Progress",
+    "version": "1.0",
+    "description": "Tracks progress of time Yearly, monthly and daily",
+    "permissions": ["tabs", "storage", "notifications", "alarms"],
+    "background": {
+        "scripts": ["background.min.js"],
+        "persistent": false
+    },
+    "chrome_url_overrides": {
+        "newtab": "timeprogress.html"
+    },
+    
+    "manifest_version": 2
+}

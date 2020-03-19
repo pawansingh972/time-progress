@@ -1,0 +1,154 @@
+body {
+    height: 100vh;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+    background: #ad5389;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+input {
+    margin: 0;
+    padding: 0;
+}
+.progress-bar-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 4em;
+}
+
+.progress-bar {
+    width: 500px;
+    height: 25px;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+.progress-bar-fill {
+    background: white;
+    width: 10%;
+    height: 100%;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+    -webkit-transition: width .6s ease;
+    transition: width .6s ease;
+}
+
+.current-time {
+    position: absolute;
+    bottom: 15px;
+    right: 35px;
+    font-size: 1.4em;
+}
+
+.settings {
+    position: absolute;
+    top: 35px;
+    right: 35px;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+}
+
+.settings:hover {
+    transform: scale(1.2, 1.2);
+}
+.settings-modal {
+    position: absolute;
+    top: 30px;
+    left: 15%;
+    width: 70%;
+    background: #ffffff;
+    color: #807f7f;
+    padding: 0 0 30px 0;
+    border-radius: 5px;
+}
+.settings-modal .header {
+    background: #d3d3d3;
+    color: #000000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.settings-modal .header .close-icon {
+    cursor: pointer;
+}
+
+.settings-modal .body {
+    padding: 10px;
+    font-size: 1.4em;
+}
+
+.progress-bar-txt {
+    margin-bottom: 0.5em;
+}
+
+.progress-value {
+    margin-top: 0.5em;
+}
+
+.hidden {
+    display: none;
+}
+
+.subtitle {
+    font-size: 0.5em;
+    margin-top: 10px;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.settings-section-header {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 500;
+}
+
+.settings-row {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0px;
+}
+
+.settings-row > label {
+    color: black;
+}
+ 
+
+.option {
+    line-height: 1.3;
+    margin: 0 20px;
+}
+
+.copyright {
+    position: absolute;
+    color: white;
+    left: 20px;
+    bottom: 15px;
+    font-size: 1.4em;
+}
+
+#water-reminder {
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    height: 15px;
+    padding: 5px;
+    width: 70px;
+}
+
+.greetings-container {
+    user-select: none;
+    display: flex;
+}
